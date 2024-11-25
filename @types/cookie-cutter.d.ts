@@ -3,6 +3,8 @@ interface CookieOptions {
   path?: string;
   domain?: string;
   secure?: boolean;
+  HttpOnly?: boolean;
+  MaxAge?: number;
   SameSite?: SameSiteOptions;
 }
 
