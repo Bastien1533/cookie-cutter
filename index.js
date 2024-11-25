@@ -20,6 +20,7 @@ var exports = (module.exports = function (doc) {
     if (opts.expires) s += "; expires=" + opts.expires;
     if (opts.path) s += "; path=" + escape(opts.path);
     if (opts.domain) s += "; domain=" + escape(opts.domain);
+    if (opts.SameSite) s += "; SameSite=" + escape(opts.SameSite);
     if (opts.secure) s += "; secure";
     doc.cookie = s;
     return s;
